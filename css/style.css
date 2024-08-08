@@ -1,0 +1,192 @@
+:root{
+  --main-color: #e65f78;
+  --main-color-rgba:rgb(230, 95, 120);
+  --bg-main:#f1f1f1;
+}
+.text-main-color{
+  color: var(--main-color);
+}
+.bg-section{
+  background-color: var(--bg-main);
+}
+body{
+  font-family: "Nunito Sans", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
+}
+img{
+  vertical-align: middle;
+}
+.home-header{
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../image/Kerri\ image02.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+#navbar, #navbar a {
+  transition:  all 0.3s;
+}
+.opacity-an{
+  animation-name: opacity-an;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+@keyframes opacity-an {
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 50%;
+  }
+  100%{
+    opacity: 100%;
+  }
+}
+.max-w-500{
+  max-width: 500px;
+}
+.btn-header{
+  --bs-btn-color: #fff;
+  --bs-btn-bg: transparent;;
+  --bs-btn-border-color: #fff;
+  --bs-btn-hover-color: black;
+  --bs-btn-hover-bg:#fff;
+  --bs-btn-hover-border-color: #fff;
+  --bs-btn-active-color: black;
+  --bs-btn-active-bg: #ffffff;
+}
+header h1 {
+  font-size: 65px;
+}
+.border-custom{
+  border: 1px solid #dee2e6;
+}
+
+.socail-icons li{
+  width: 30px;
+  height: 30px;
+  transition: all 0.5s;
+}
+.socail-icons li:hover{
+  border-color: var(--main-color) !important;
+}
+.socail-icons li i{
+  transition: all 0.5s;
+}
+.socail-icons li:hover i{
+  color: var(--main-color);
+}
+.card-custom{
+  --bs-card-border-width: 1px;
+  --bs-card-border-color: #dee2e6;
+  --bs-card-border-radius: var(--bs-border-radius);
+}
+#services .card h5::after{
+  content: "";
+  width: 50px;
+  height:2px;
+  background: var(--main-color);
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.5s ;
+}
+#services .card:hover h5::after{
+  width: 70px;
+}
+#client img{
+  width: 100px;
+  height: 100px;
+}
+#Portfolio figure::after{
+  content:" ";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color:rgba(0,0,0,0.7);
+  opacity: 0;
+}
+#Portfolio figure img,
+#Portfolio figure::after,
+#Portfolio figure figcaption{
+  transition: all 0.5s;
+}
+#Portfolio figure figcaption{
+  top: 120%;
+}
+#Portfolio figure:hover img{
+  transform: scale(1.08);
+}
+#Portfolio figure:hover::after{
+  opacity: 1;
+}
+#Portfolio figure:hover figcaption{
+  top: 50%;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link, .nav-pills button:hover {
+  color: white;
+  background-color: var(--main-color);
+}
+.nav-pills button{
+  color: black;
+}
+.nav-pills button{
+  transition: all 0.5s;
+  margin-left: 5px;
+}
+/* #home{
+  color: var(--main-color-rgba)
+} */
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show , .nav-link:hover{
+  color: var(--main-color-rgba) 
+}
+.form-control{
+  border: 2px solid #e0e0e0
+}
+
+.form-control:focus {
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  border-color:var(--main-color);
+  outline: 0;
+  box-shadow: 0 0 0 0rem rgba(13, 110, 253, .25);
+}
+.btn-custom {
+  --bs-btn-color: #fff;
+  --bs-btn-bg:#e65f78;;
+  --bs-btn-border-color: var(--main-color);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg:#d04f67; ;
+  --bs-btn-hover-border-color:var(--main-color);
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #e65f78;;
+  --bs-btn-active-border-color: #e65f78;;
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #e65f78;;
+  --bs-btn-disabled-border-color: #e65f78;
+}
+footer {
+  padding: 70px 0px;
+  background-color: #212121;
+}
+.footer .footer-alt ul li a {
+  border-radius: 50%;
+  transition: all 0.5s;
+  background-color: rgba(241, 241, 241, 0.08);
+  width: 44px;
+  height: 44px;
+  display: block;
+  font-size: 20px;
+  line-height: 44px;
+  text-align: center;
+}
+.footer a{
+  color: white;
+}
+.footer a i{
+transition: all 0.5s;
+}
+.footer a i:hover {
+  color: var(--main-color-rgba) !important;
+}
